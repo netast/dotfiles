@@ -1,0 +1,32 @@
+{
+   "hyprland/workspaces" : {
+      "on-click": "activate",
+      "activate-only": "false",
+      "all-outputs": "true",
+      "format": "{}",
+      "format-icons":{
+	      "urgent":"",
+	      "active": "",
+	      "default": ""
+      },"persistent-workspaces":{
+      "*": 5
+      }   
+   },
+   "hyprland/window": {
+	   "rewrite": {
+		   "(.*) Microsoft Teams": "$1",
+		   "(.*) Mozilla Firefox": "Firefox"
+	   },
+	   "separate-outputs": true
+
+   },
+   "custom/empty": {
+	   "format": ""
+   },
+   "custom/appmenuicon": {
+        "format": "",
+        "on-click": "wofi -show drun -replace",
+        "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
+        "tooltip": false
+    }   
+}

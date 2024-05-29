@@ -1,0 +1,32 @@
+{
+  "hyprland/language": {
+      "format" : "{}",
+      "format-en": "EN",
+      "format-ru": "RU",
+      "keyboard-name": "microsoft-microsoft®-2.4ghz-transceiver-v9.0",
+      "on-click": "hyprctl switchxkblayout microsoft-microsoft®-2.4ghz-transceiver-v9.0 next"
+  },
+  "hyprland/workspaces":{
+      "on-click": "activate",
+      "active-only": false,
+      "all-outputs": true,
+      "format" : "{}",
+      "format-icons": {
+         "urgent": "",
+	 "active": "",
+	 "default": ""
+      },
+      "persistent-workspaces": {
+          "*": 5
+      }
+  },
+  "custom/appmenuicon":{
+	  "format": "",
+	  "on-click": "sleep 0.2;wofi --show drun --style ~/.config/wofi/style.css --replace"
+   },	  
+  "custom/exit": {
+        "format": "",
+        "on-click": "wlogout",
+        "tooltip": false
+    }
+}
