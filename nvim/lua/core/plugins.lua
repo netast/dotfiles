@@ -36,6 +36,8 @@ require("lazy").setup({
           'stevearc/dressing.nvim', -- optional for vim.ui.select
         },
         config = true,
-        }
+    },
+    {'hrsh7th/cmp-nvim-lsp'}, {'hrsh7th/cmp-buffer'}, {'hrsh7th/cmp-path'},
+    {'hrsh7th/cmp-cmdline'}, {'hrsh7th/nvim-cmp'}, {'lewis6991/gitsigns.nvim'},
 })
 
