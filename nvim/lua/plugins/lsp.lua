@@ -3,8 +3,15 @@ lspconfig.tsserver.setup {}
 lspconfig.prismals.setup {}
 lspconfig.golangci_lint_ls.setup {}
 -- lspconfig.dartls.setup {}
-
-
+lspconfig.lua_ls.setup {
+   settings = {
+     Lua = {
+       diagnostics = { globals = { 'vim'}}
+     }
+   }
+}
+lspconfig.pyright.setup {}
+lspconfig.ruff_lsp.setup {}
 
 
 

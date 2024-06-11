@@ -39,5 +39,7 @@ require("lazy").setup({
     },
     {'hrsh7th/cmp-nvim-lsp'}, {'hrsh7th/cmp-buffer'}, {'hrsh7th/cmp-path'},
     {'hrsh7th/cmp-cmdline'}, {'hrsh7th/nvim-cmp'}, {'lewis6991/gitsigns.nvim'},
+    { "williamboman/mason.nvim" },
+    { "williamboman/mason-lspconfig.nvim",}
 })
 
