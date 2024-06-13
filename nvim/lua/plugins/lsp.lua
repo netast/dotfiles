@@ -12,6 +12,13 @@ lspconfig.lua_ls.setup {
 lspconfig.pyright.setup {}
 lspconfig.ruff_lsp.setup {}
 
+local pid = vim.fn.getpid()
+-- local omnisharp_bin="/Users/yp/.local/share/nvim/mason/bin/omnisharp"
+local omnisharp_bin= vim.fn.expand('$HOME/.local/share/nvim/mason/bin/omnisharp')
+lspconfig.omnisharp.setup {
+    cmd = { omnisharp_bin, "--languageserver","--hostPID",tostring(pid) }
+}
+
 
 
 vim.keymap.set('n', '<leader>lD', vim.diagnostic.open_float)
@@ -49,4 +56,4 @@ vim.api.nvim_create_autocmd('LspAttach', {
         vim.keymap.set('n', 'ca', vim.lsp.buf.code_action, opts)
         --vim.keymap.set('x', 'ca', '<Cmd>lua vim.lsp.buf.range_code_action()<CR>', opts)
     end
-})
+}) 

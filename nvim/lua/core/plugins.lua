@@ -66,6 +66,26 @@ require("lazy").setup({
     },
     {
         "lewis6991/gitsigns.nvim"
-    }
+    },
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true
+        -- use opts = {} for passing setup options
+        -- this is equalent to setup({}) function
+    },
+    {
+        "windwp/nvim-ts-autotag"
+    },
+    {
+        'akinsho/bufferline.nvim',
+        version = "*",
+        dependencies = 'nvim-tree/nvim-web-devicons'
+    },
+    {
+        "terrortylor/nvim-comment"
+    },
+    { 'akinsho/toggleterm.nvim',        version = "*", config = true },
+
 
 })
