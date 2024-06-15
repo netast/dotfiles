@@ -20,3 +20,6 @@ require('plugins.autotag')
 require('plugins.bufferline')
 require('plugins.comment')
 require('plugins.termtoggle')
+require('plugins.dap')
+require('plugins.dapui')
+
