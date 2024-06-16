@@ -33,3 +33,10 @@ vim.keymap.set('v', '<leader>/', ":CommentToggle<CR>")
 -- Splits
 vim.keymap.set('n', '|', ':vsplit<CR>')
 vim.keymap.set('n', '\\', ':split<CR>')
+
+-- Debugger
+vim.keymap.set('n', '<Leader>dt', ':DapToggleBreakpoint<CR>')
+vim.keymap.set('n', '<Leader>dc', ':DapContinue<CR>')
+vim.keymap.set('n', '<Leader>dn', ':DapStepOver<CR>')
+vim.keymap.set('n', '<Leader>di', ':DapStepInto<CR>')
+vim.keymap.set('n', '<Leader>dq', ':DapTerminate<CR>')
