@@ -34,8 +34,8 @@ dap.configurations.dart = {
         type = "dart",
         request = "launch",
         name = "Launch dart",
-        dartSdkPath = "/home/yp/development/flutter/bin/dart",
-        flutterSdkPath = "/home/yp/development/flutter/bin/flutter",
+        dartSdkPath = "dart",
+        flutterSdkPath = "flutter",
         program = "${workspaceFolder}/lib/main.dart", -- ensure this is correct
         cwd = "${workspaceFolder}",
     },
@@ -43,8 +43,8 @@ dap.configurations.dart = {
         type = "flutter",
         request = "launch",
         name = "Launch flutter",
-        dartSdkPath = "/home/yp/development/flutter/bin/dart",
-        flutterSdkPath = "/home/yp/development/flutter/bin/flutter",
+        dartSdkPath = "dart",
+        flutterSdkPath = "flutter",
         program = "${workspaceFolder}/lib/main.dart", -- ensure this is correct
         cwd = "${workspaceFolder}",
     }
