@@ -37,7 +37,7 @@ require("lazy").setup({
         config = true,
     },
     { 'hrsh7th/cmp-nvim-lsp' }, { 'hrsh7th/cmp-buffer' }, { 'hrsh7th/cmp-path' },
-    { 'hrsh7th/cmp-cmdline' }, { 'hrsh7th/nvim-cmp' }, { 'lewis6991:wq/gitsigns.nvim' },
+    { 'hrsh7th/cmp-cmdline' }, { 'hrsh7th/nvim-cmp' },
     { "williamboman/mason.nvim" },
     { "williamboman/mason-lspconfig.nvim", },
     {
@@ -85,7 +85,7 @@ require("lazy").setup({
     {
         "terrortylor/nvim-comment"
     },
-    { 'akinsho/toggleterm.nvim',        version = "*",                                                    config = true },
+    { 'akinsho/toggleterm.nvim',        version = "*",                                                      config = true },
     { "mfussenegger/nvim-dap" },
     { "rcarriga/nvim-dap-ui",           dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } }
 
