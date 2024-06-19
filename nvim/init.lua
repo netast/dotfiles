@@ -22,4 +22,5 @@ require('plugins.comment')
 require('plugins.termtoggle')
 require('plugins.dap')
 require('plugins.dapui')
+require('plugins.arb')
 
