@@ -5,6 +5,7 @@ lspconfig.golangci_lint_ls.setup({})
 lspconfig.lua_ls.setup({ settings = { Lua = { diagnostics = { globals = { "vim" } } } } })
 lspconfig.pyright.setup({})
 lspconfig.ruff_lsp.setup({})
+lspconfig.gopls.setup({})
 
 local pid = vim.fn.getpid()
 -- local omnisharp_bin="/Users/yp/.local/share/nvim/mason/bin/omnisharp"
@@ -62,6 +63,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 			vim.lsp.buf.format({ async = true })
 		end, opts)
 		vim.keymap.set("n", "ca", vim.lsp.buf.code_action, opts)
-		-- vim.keymap.set('x', 'ca', '<Cmd>lua vim.lsp.buf.range_code_action()<CR>', opts)
+		vim.keymap.set("v", "ca", vim.lsp.buf.code_action, opts)
 	end,
 })
