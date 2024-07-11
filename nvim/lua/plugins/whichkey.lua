@@ -5,6 +5,7 @@ wk.register({
 		name = "Find",
 		f = { "Find File" },
 		b = { "Find Buffer" },
+		d = { "Find Diagnostics" },
 		h = { "Find Help" },
 		w = { "Find Text" },
 	},
@@ -34,3 +35,10 @@ wk.register({
 		q = "Terminate",
 	},
 }, { prefix = "<leader>" })
+
+wk.register({
+	d = "Go to Definition",
+	D = "Go to Declaration",
+	r = "Show references",
+	i = "Go to Implementation",
+}, { prefix = "g" })

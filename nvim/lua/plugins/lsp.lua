@@ -29,6 +29,9 @@ lspconfig.yamlls.setup({})
 
 lspconfig.bashls.setup({})
 
+lspconfig.lemminx.setup({
+	settings = { xml = { server = { workDir = "~/.cache/lemminx" } } },
+})
 vim.keymap.set("n", "<leader>lD", vim.diagnostic.open_float)
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
