@@ -89,4 +89,16 @@ require("lazy").setup({
 		"rcarriga/nvim-dap-ui",
 		dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
 	},
+	{
+		"kdheepak/lazygit.nvim",
+		cmd = {
+			"LazyGit",
+			"LazyGitConfig",
+			"LazyGitCurrentFile",
+			"LazyGitFilter",
+			"LazyGitFilterCurrentFile",
+		},
+		dependencies = { "nvim-lua/plenary.nvim" },
+		keys = { { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" } },
+	},
 })
