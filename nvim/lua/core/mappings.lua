@@ -26,6 +26,8 @@ vim.keymap.set("n", "<c-k>", ":wincmd k<CR>")
 vim.keymap.set("n", "<c-j>", ":wincmd j<CR>")
 vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
+
+-- Comments
 vim.keymap.set("n", "<leader>/", ":CommentToggle<CR>")
 vim.keymap.set("v", "<leader>/", ":CommentToggle<CR>")
 
@@ -39,3 +41,6 @@ vim.keymap.set("n", "<Leader>dc", ":DapContinue<CR>")
 vim.keymap.set("n", "<Leader>dn", ":DapStepOver<CR>")
 vim.keymap.set("n", "<Leader>di", ":DapStepInto<CR>")
 vim.keymap.set("n", "<Leader>dq", ":DapTerminate<CR>")
+
+-- Lazy Git
+vim.keymap.set("n", "<Leader>lg", ":LazyGit<CR>")
