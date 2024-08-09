@@ -1,5 +1,5 @@
 local lspconfig = require("lspconfig")
-lspconfig.tsserver.setup({})
+-- lspconfig.tsserver.setup({})
 lspconfig.prismals.setup({})
 lspconfig.golangci_lint_ls.setup({})
 lspconfig.lua_ls.setup({ settings = { Lua = { diagnostics = { globals = { "vim" } } } } })
@@ -33,8 +33,11 @@ lspconfig.lemminx.setup({
 	settings = { xml = { server = { workDir = "~/.cache/lemminx" } } },
 })
 
-lspconfig.html.setup({})
+-- lspconfig.html.setup({})
 
+lspconfig.svelte.setup({
+	filetypes = { "typescript", "javascript", "svelte", "html", "css" },
+})
 -- lspconfig.gradle.setup({})
 
 vim.keymap.set("n", "<leader>lD", vim.diagnostic.open_float)
